@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Holocene Calendar Plugin",
+  "description": "This extension converts any occurrence of calendar years on the current page into the Holocene calendar",
+  "version": "1.0",
+
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["holocene.js"],
+      "all_frames": true
+    }
+  ]
+}
